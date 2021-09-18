@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "FMScrollGroupsControl": "../map/FMScrollGroupsControl/FMScrollGroupsControl",
+    "FMButtonGroupsControl": "../map/FMButtonGroupsControl/FMButtonGroupsControl",
+    "FMViewModeControl": "../map/FMViewModeControl/FMViewModeControl",
+    "FMAllLayerControl": "../map/FMAllLayerControl/FMAllLayerControl",
+    "index-page": "../newestindex/newestindex"
+  },
+  "navigationStyle": "custom"
+}

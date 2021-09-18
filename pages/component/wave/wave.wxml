@@ -1,0 +1,12 @@
+<!--component/wave/wave.wxml-->
+<view class="zr" style='height:{{viewHeiht}}rpx;background:{{backgroundColors}};'>
+  <view class="logoSty">
+    <image src="../../imgs/newImg/logo.png"></image>
+  </view>
+  <view class="water">
+    <view class="water-c">
+      <view class="water-1"> </view>
+      <view class="water-2"> </view>
+    </view>
+  </view>
+</view>

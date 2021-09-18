@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wave": "../component/wave/wave",
+    "van-row": "../component/vant/row",
+    "van-col": "../component/vant/col"
+  }
+}

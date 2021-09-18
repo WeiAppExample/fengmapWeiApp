@@ -1,0 +1,43 @@
+/* pages/newestindex/newestindex.wxss */
+.contentNav {
+  height: 100%;
+}
+.titleMsg {
+  text-align: center;
+  font-size: 38rpx;
+  padding: 70rpx 0 30rpx;
+}
+.tagJump {
+  color: #9e9eea;
+  font-size: 26rpx;
+  text-align: center;
+}
+.mine_profilePhoto {
+  margin-left: 36rpx;
+}
+.mt40{
+  margin-top: 40rpx;
+}
+.mine_name {
+  padding: 20rpx 0;
+  
+}
+.mineStatus {
+  padding-top: 40rpx;
+}
+
+.btnTab {
+  height: 46rpx;
+  line-height: 46rpx;
+  color: #fff;
+  background-color: #9e9eea;
+  width: 160rpx;
+  border-radius: 23rpx;
+  font-size: 22rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.exhibitionModule {
+  margin-left: 36rpx;
+}

@@ -1,0 +1,3 @@
+<view class="moveWrap">
+	<view class="move" style="height:{{rH}}rpx;width:{{rW}}rpx;left:{{x}}px;top:{{y}}px;" catchtouchmove="_minMove"></view>
+</view>

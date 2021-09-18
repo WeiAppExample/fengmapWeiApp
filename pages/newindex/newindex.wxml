@@ -1,0 +1,41 @@
+
+<view class="containerMap">
+    <!-- 加载地图容器 -->
+    <canvas type="webgl" id="fengMap" style="width: 100%; height: {{mapHeight}};" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+        <FMScrollGroupsControl id="scrollGroupsControl" wx:if="{{mapLoaded == true }}" focusGroupID="{{focusGroupID}}" groupIDs="{{mapGroupIDs}}" allLayer="{{isAllLayer}}" showBtnCount="3" bind:switchGroup="switchGroup" bind:switchLayers="switchLayers" />
+        <!-- 楼层控件二 按钮型楼层控件 -->
+        <!-- <FMButtonGroupsControl id="buttonGroupsControl" wx:if="{{mapLoaded == true }}" focusGroupID="{{focusGroupID}}" groupIDs="{{mapGroupIDs}}" showBtnCount="3" bind:switchGroup="switchGroup" /> -->
+        <!-- 2、3D控件 -->
+        <FMViewModeControl wx:if="{{mapLoaded == true }}" is3D="{{is3D}}" bind:changeMode="changeMode" />
+        <!-- 单、多楼层控件 
+        <FMAllLayerControl wx:if="{{mapLoaded == true }}" allLayer="{{isAllLayer}}" bind:switchLayers="switchLayers" /> <!-- -->
+        -->
+    </canvas>
+    <!-- 2d画布 -->
+    <canvas type="2d" id="temp" style="position: absolute;top: -1000px;"></canvas>
+</view>
+
+<!-- 
+catchtouchmove="buttonMove" bindtouchstart="buttonStart" bindtouchend="buttonEnd"
+style="top:{{buttonTop}}px"
+
+-->
+
+<view id="mainContent" class="containerWx" wx:if="{{mapLoaded}}" animation="{{animationData}}"
+
+
+>
+<!-- 首页代码放在此处-->
+
+<index-page></index-page>
+
+</view>
+
+
+<view  wx:if="{{mapLoaded}}" style="position: absolute;top:0;left:0"  wx:for="{{categories}}" wx:key="id">
+        <view class="category-column show"
+            bindtap="tabClick" data-index="{{index}}">
+            <image mode="aspectFill" class="category-imgbox-2" src="{{item.icon}}"></image>
+            <view class="category-title">{{item.name}}</view>
+        </view>
+</view>

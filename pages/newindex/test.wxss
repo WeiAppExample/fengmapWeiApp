@@ -1,0 +1,16 @@
+/* pages/move/move.wxss */
+.moveWrap {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+ 
+.move {
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 50%;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

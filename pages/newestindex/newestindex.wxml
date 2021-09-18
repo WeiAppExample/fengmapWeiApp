@@ -1,0 +1,39 @@
+<!--pages/newestindex/newestindex.wxml-->
+<!-- 波浪组件 -->
+<wave></wave>
+<view>
+  <view class="contentNav">
+    <view class="titleMsg">个人信息</view>
+    <van-row gutter="10" class="tagJump">
+      <van-col span="4" offset="6"><span bindtap="toMyCardTap">名片</span></van-col>
+      <van-col span="4"><span bindtap="toCollectTap">收藏</span></van-col>
+      <van-col span="4"><span bindtap="goChart">聊天</span></van-col>
+    </van-row>
+    <view class="mt40"> 
+      <van-row gutter="10">
+        <van-col span="8">
+          <view style="width:70%">
+            <open-data class="mine_profilePhoto" type="userAvatarUrl"></open-data>
+          </view>
+        </van-col>
+        <van-col span="6">
+          <view class="mine_name">
+            <open-data type="userNickName"></open-data>
+            <view class="mineStatus">我是<text wx:if="{{loginType == 0}}">观众</text><text wx:if="{{loginType == 1}}">展商</text></view>
+          </view>
+        </van-col>
+        <van-col span="8">
+          <view class="btnTab" wx:if='{{userType != 9}}' bindtap="tabUser">
+							切换为<text wx:if="{{loginType == 1}}">观众</text><text wx:if="{{loginType == 0}}">展商</text>
+			    </view>
+        </van-col>
+      </van-row>
+    </view>
+
+    <view class="mt40"> 
+      <!-- 探索展会 -->
+      <view class="exhibitionModule">探索展会</view>
+    </view>
+
+  </view>
+</view>
