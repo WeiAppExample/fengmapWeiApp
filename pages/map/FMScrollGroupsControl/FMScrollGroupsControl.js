@@ -42,7 +42,7 @@ Component({
    */
   data: {
     btnUrl: './image/',
-    scrollHeight: 250,
+    scrollHeight: 350,
     isTop: false,
     isBottom: true,
     needArrow: false
@@ -62,7 +62,22 @@ Component({
 
       this._setArrowBtnStatus(focusId);
     },
+    /**
+     * 缩放
+     * @param {*} e 
+     */
+    switchZoomOut: function (e) {
+      this.triggerEvent('switchZoomOut', null);
 
+    },
+   /**
+     * 缩放
+     * @param {*} e 
+     */
+    switchZoomIn: function (e) {
+      this.triggerEvent('switchZoomIn', null);
+
+    },
     /**
      * 设置上下箭头按钮的状态
      * @param {*} focusId 聚焦楼层id

@@ -3,7 +3,10 @@
     "FMScrollGroupsControl": "../map/FMScrollGroupsControl/FMScrollGroupsControl",
     "FMButtonGroupsControl": "../map/FMButtonGroupsControl/FMButtonGroupsControl",
     "FMViewModeControl": "../map/FMViewModeControl/FMViewModeControl",
+    "FMViewMenuControl": "../map/FMViewMenuControl/FMViewMenuControl",
     "FMAllLayerControl": "../map/FMAllLayerControl/FMAllLayerControl",
+    "van-row": "../component/vant/row",
+    "van-col": "../component/vant/col",
     "index-page": "../newestindex/newestindex"
   },
   "navigationStyle": "custom"

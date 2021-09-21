@@ -1,0 +1,7 @@
+.tab-wrap-top {
+    background: -webkit-linear-gradient(top,#6779ba,#7F90CC);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+  }

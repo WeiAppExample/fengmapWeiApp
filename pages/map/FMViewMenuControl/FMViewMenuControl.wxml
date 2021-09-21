@@ -1,0 +1,11 @@
+<view class="tab-wrap-top">
+    <view style="display: flex;align-items: flex-end;height: 240rpx;">
+        <tab tab-cur="{{tabCur1}}"
+                tab-data="{{tabData1}}"
+                color="{{color}}"
+                size="{{size}}"
+                scroll
+                bindchange="tabChange">
+        </tab>
+    </view>
+</view>
