@@ -1,5 +1,6 @@
 <!--component/wave/wave.wxml-->
-<view class="zr" style='height:{{viewHeiht}}rpx;background:{{backgroundColors}};'>
+<!-- <view class="zr" style='height:{{viewHeiht}}rpx;background:{{backgroundColors}};'> -->
+<view class="zr">
   <view class="logoSty">
     <image src="../../imgs/newImg/logo.png"></image>
   </view>

@@ -85,7 +85,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        app.openLive()
+       
         let that = this;
         if (options.dataId) {
             //从短信过来，修改客户手机号
@@ -93,16 +93,7 @@ Page({
                 success: res => {
                     // 发送 res.code 到后台换取 openId, sessionKey
                     wx.setStorageSync('code', res.code);
-                    that.loginMobile(res.code, options.dataId, function () {
-                        let userType = wx.getStorageSync('loginType') || 0;
-
-                        wx.login({
-                            success: res2 => {
-                                app.login(res2.code, userType);
-                            }
-                        })
-
-                    });
+                   
                 }
             })
         }

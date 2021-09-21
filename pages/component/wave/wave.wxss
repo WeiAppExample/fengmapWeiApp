@@ -3,7 +3,7 @@
 .zr {
   background: #0396ff;
   width: 100%;
-  height: 100px;
+  height: 0;
   position: relative;
 }
 
