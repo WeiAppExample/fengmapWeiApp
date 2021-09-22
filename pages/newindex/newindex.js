@@ -85,7 +85,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-       
+
         let that = this;
         if (options.dataId) {
             //从短信过来，修改客户手机号
@@ -93,7 +93,7 @@ Page({
                 success: res => {
                     // 发送 res.code 到后台换取 openId, sessionKey
                     wx.setStorageSync('code', res.code);
-                   
+
                 }
             })
         }
@@ -124,16 +124,16 @@ Page({
             },
         })
 
-        wx.setStorageSync('adMapIsShow', false)
+        /*wx.setStorageSync('adMapIsShow', false)
         if (!wx.getStorageSync('adMapIsShow')) {
             this.setData({
               flag: true,
             });
 
             setTimeout(() => {
-              this.setData({
+              /!*this.setData({
                 mapTop:-1000,
-              });
+              });*!/
 
             }, 1000);
             wx.setStorageSync('adMapIsShow', true)
@@ -141,7 +141,7 @@ Page({
             this.setData({
               flag: false
             });
-          }
+          }*/
 
           that.initMap();
     },

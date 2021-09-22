@@ -1,6 +1,6 @@
 
     <canvas type="webgl" id="fengMap"
-    style="width: 750rpx; height: 1000rpx;position: absolute;top: {{mapTop}}px;" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+    style="width: 750rpx; height: 1000rpx;" disable-scroll bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
         <!-- 顶部菜单 -->
         <FMViewMenuControl wx:if="{{mapLoaded == true }}"  />
         <!-- 按钮组 -->
